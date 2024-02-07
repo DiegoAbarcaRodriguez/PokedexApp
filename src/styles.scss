@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@use './scss/variables' as v;
+
+$font-family-base: v.$fuentePrincipal;
+$card-border-radius: 1rem;
+$card-border-width: 0.1rem;
+
+
+@use './scss/index';
+@import'../node_modules/bootstrap/scss/bootstrap.scss';

@@ -1,0 +1,213 @@
+   .bg-green {
+       background-color: rgba(77, 228, 32, 0.884);
+       accent-color: rgba(77, 228, 32, 0.884);
+   }
+
+   .bg-pink {
+       background-color: pink;
+       accent-color: pink;
+   }
+
+   .bg-red {
+       background-color: rgba(236, 78, 78, 0.747);
+       accent-color: rgba(236, 78, 78, 0.747);
+   }
+
+   .bg-aqua {
+       background-color: rgba(9, 162, 223, 0.747);
+       accent-color: rgba(9, 162, 223, 0.747);
+   }
+
+   .bg-purple {
+       background-color: purple;
+       accent-color: purple;
+   }
+
+   .bg-brown {
+       background-color: #6F4E37;
+       accent-color: #6F4E37;
+   }
+
+   .bg-brown-2 {
+       background-color: #AC8147;
+       accent-color: #AC8147;
+   }
+
+   .bg-yellow-2 {
+       background-color: #cccc00;
+       accent-color: #cccc00;
+   }
+
+   .bg-purple-2 {
+       background-color: #400040;
+       accent-color: #400040;
+   }
+
+   .bg-orange {
+       background-color: #ff863f;
+       accent-color: #ff863f;
+   }
+
+   .bg-blue {
+       background-color: #5e7ef9;
+       accent-color: #5e7ef9;
+   }
+
+   .bg-yellow {
+       background-color: #ffff42;
+       accent-color: #ffff42;
+   }
+
+   .bg-pink-2 {
+       background-color: rgb(238, 116, 138);
+       accent-color: rgb(238, 116, 138);
+   }
+
+   .bg-blue-2 {
+       background-color: rgb(165, 252, 252);
+       accent-color: rgb(165, 252, 252);
+   }
+
+   .bg-blue-3 {
+       background-color: #68c7e7d7;
+       accent-color: #68c7e7d7;
+   }
+
+   .bg-gray {
+       background-color: #808080;
+       accent-color: #808080;
+   }
+
+   .bg-dark {
+       background-color: lighten($color: #202020, $amount: 50);
+       accent-color: lighten($color: #202020, $amount: 50);
+   }
+
+   .bg-pink-3 {
+       background-color: rgb(233, 152, 226);
+       accent-color: rgb(233, 152, 226);
+   }
+
+   .text-green {
+       color: rgba(77, 228, 32, 0.884);
+
+   }
+
+   .text-pink {
+       color: pink;
+   }
+
+   .text-red {
+       color: rgba(236, 78, 78, 0.747);
+   }
+
+   .text-aqua {
+       color: rgba(9, 162, 223, 0.747);
+   }
+
+   .text-purple {
+       color: purple;
+   }
+
+   .text-brown {
+       color: #6F4E37;
+   }
+
+   .text-brown-2 {
+       color: #AC8147;
+   }
+
+   .text-yellow-2 {
+       color: #cccc00;
+   }
+
+   .text-purple-2 {
+       color: #400040;
+   }
+
+   .text-orange {
+       color: #ff863f;
+   }
+
+   .text-blue {
+       color: #5e7ef9;
+   }
+
+   .text-yellow {
+       color: #ffff42;
+   }
+
+   .text-pink-2 {
+       color: rgb(238, 116, 138);
+   }
+
+   .text-blue-2 {
+       color: rgb(165, 252, 252)
+   }
+
+   .text-blue-3 {
+       color: #68c7e7d7;
+   }
+
+   .text-gray {
+       color: #808080;
+   }
+
+   .text-dark {
+       color: lighten($color: #202020, $amount: 50);
+   }
+
+   .text-pink-3 {
+       color: rgb(233, 152, 226);
+   }
+
+   .bg-pokeball {
+       background-image: url('../../../assets/pokedex.svg');
+       background-repeat: no-repeat;
+       background-position: 50% 3%;
+
+       background-size: 15rem;
+
+       @media(min-width: 320px) {
+           background-size: 20rem;
+
+       }
+
+       @media(min-width: 408px) {
+           background-size: 30rem;
+       }
+
+
+
+   }
+
+
+
+   .bg-white {
+
+       margin-top: 4rem;
+       padding-top: 7rem;
+
+   }
+
+   .pokemon-img {
+
+       width: 15rem;
+       
+
+       @media(min-width: 320px) {
+           width: 20rem;
+
+       }
+
+       @media(min-width: 408px) {
+           width: 30rem;
+       }
+
+
+       margin-bottom: -11rem;
+   }
+
+   svg:hover {
+       cursor: pointer;
+   }
