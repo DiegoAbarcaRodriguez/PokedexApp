@@ -1,0 +1,49 @@
+.bg-pokeball {
+    background-image: url('../../../../assets/pokedex.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 3%;
+
+    background-size: 15rem;
+
+    @media(min-width: 320px) {
+        background-size: 20rem;
+
+    }
+
+    @media(min-width: 408px) {
+        background-size: 30rem;
+    }
+
+
+}
+
+
+
+.bg-white {
+
+    margin-top: 4rem;
+    padding-top: 7rem;
+
+}
+
+.pokemon-img {
+
+    width: 15rem;
+
+
+    @media(min-width: 320px) {
+        width: 20rem;
+
+    }
+
+    @media(min-width: 408px) {
+        width: 30rem;
+    }
+
+
+    margin-bottom: -11rem;
+}
+
+svg:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-center gap-5 align-items-center">
+    <div class="d-flex align-items-center">
+
+        <app-arrow-back (click)="setBackPokemon()" style="cursor: pointer;"></app-arrow-back>
+
+        <span class="text-white display-2 fw-bold text-capitalize ">{{pokemon!.name}}</span>
+    </div>
+
+    <span class="text-white display-2 fw-bold">
+        #{{pokemon!.id}}
+    </span>
+</div>

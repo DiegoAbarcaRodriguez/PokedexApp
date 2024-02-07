@@ -1,0 +1,49 @@
+<p class="text-center fw-bold mt-5 display-3" [class]="pokemon!.types[0].type.name |i18nSelect:typesOfPokemonsText">
+    About
+</p>
+
+
+<div class="row justify-content-center">
+    <div class="col-xl-4 col-lg-5  col-sm-7 col-11">
+        <div class="row ">
+            <div class="col border-end">
+                <div class="d-flex align-items-end gap-3">
+
+                    <app-weight></app-weight>
+
+                    <span class="display-6 fw-bold">
+                        {{pokemon?.weight}} kg
+                    </span>
+
+                </div>
+
+                <p class="text-start ms-4 fs-4 ">Weight</p>
+            </div>
+            <div class="col border-end">
+                <div class="d-flex align-items-end gap-3">
+
+                    <app-height></app-height>
+
+                    <span class="display-6 fw-bold">
+                        {{pokemon?.height}} m
+                    </span>
+
+                </div>
+
+                <p class="text-start ms-4 fs-4 ">Height</p>
+
+            </div>
+            <div class="col">
+                <ul class="list-unstyled list-group list-group-flush">
+                    <li *ngFor="let move of pokemon?.moves" class="list-group-item fs-3 fw-bold py-0">
+                        {{move.move.name}}
+                    </li>
+                </ul>
+
+                <p class="text-start ms-4 fs-4 ">Moves</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>

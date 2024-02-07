@@ -1,0 +1,29 @@
+<p class="text-center fw-bold mt-5 display-3" [class]="pokemon!.types[0].type.name |i18nSelect:typesOfPokemonsText">
+    Base Stats
+</p>
+
+<div class="row justify-content-center ">
+    <div class="col-8 col-md-6">
+        <div class="row">
+            <ul class="col-2 list-unstyled border-end">
+                <li class="fw-bold fs-4 d-flex flex-column align-items-center"
+                    [class]="pokemon!.types[0].type.name |i18nSelect:typesOfPokemonsText"
+                    *ngFor="let stat of pokemon?.stats">
+                    {{stat.stat.name | i18nSelect:typesOfPokemonsStats}}
+                </li>
+            </ul>
+
+            <ul class="col-10 list-unstyled">
+                <li class="d-flex gap-3" *ngFor="let stat of pokemon?.stats">
+                    <span class="fs-4">{{stat.base_stat}} </span>
+                    <input [class]="pokemon!.types[0].type.name |i18nSelect:typesOfPokemonBackground" #input
+                        (change)="input.value=stat.base_stat.toString()" [value]="stat.base_stat" type="range"
+                        class="w-100">
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>

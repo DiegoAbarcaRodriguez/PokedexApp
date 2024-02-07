@@ -1,0 +1,14 @@
+.card {
+    box-shadow: -3px 4px 0px 0px rgba(0, 0, 0, 0.33);
+
+    &-number {
+        text-align: end;
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        margin-right: 0.2rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

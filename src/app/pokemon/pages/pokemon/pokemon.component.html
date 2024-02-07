@@ -1,0 +1,63 @@
+<div class="p-2 rounded-4">
+    <div class="bg-pokeball pt-4 pb-2 px-2 m-2 rounded-4"
+        [class]="pokemon!.types[0].type.name|i18nSelect:typesOfPokemonBackground">
+        <div class="container-fluid mx-0 px-0">
+
+            <pokemon-header [pokemon]="pokemon"></pokemon-header>
+
+            <div class="d-flex align-items-end justify-content-between">
+
+                <div style="cursor: pointer;" [ngStyle]="{ 'visibility': pokemon!.order==1? 'hidden': 'visible'}"
+                    (click)="changePokemon(false)">
+                    <app-arrow-left></app-arrow-left>
+                </div>
+
+
+                <div class=" mt-5 text-center">
+                    <img [src]="pokemon?.image" [alt]="pokemon!.name" class="pokemon-img">
+                </div>
+
+                <div class=" text-end" style="cursor: pointer;" (click)="changePokemon()">
+                    <app-arrow-right></app-arrow-right>
+                </div>
+
+
+            </div>
+
+
+            <div class="bg-white rounded-4 pb-5">
+
+                <div class="d-flex justify-content-center gap-5 align-items-center">
+                    <div *ngFor="let type of pokemon?.types"
+                        class="rounded-pill text-capitalize text-white fw-bold fs-1 px-5 py-2"
+                        [class]="type.type.name|i18nSelect:typesOfPokemonBackground">
+                        {{type.type.name}}
+                    </div>
+                </div>
+
+
+                <pokemon-features [pokemon]="pokemon"></pokemon-features>
+
+
+
+
+                <p class="text-center fs-4 mt-4 mx-4">
+                    {{descriptionOfPokemon}}
+                </p>
+
+
+                <pokemon-stats [pokemon]="pokemon"></pokemon-stats>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+</div>
