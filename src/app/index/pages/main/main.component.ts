@@ -35,6 +35,14 @@ export class MainComponent implements OnInit {
 
   getPokemonByNameOrId(pokemonName: string) {
 
+
+    if (pokemonName === 'prohibido') {
+      this.isProhibited = true;
+      return;
+    }
+
+    pokemonName = pokemonName.toLowerCase()
+
     this.pokemons = [];
     this.isProhibited = false;
 
@@ -45,14 +53,10 @@ export class MainComponent implements OnInit {
       this.idSearchedPokemon = undefined;
 
 
+    this.callPokemonService(pokemonName)
+  }
 
-    if (pokemonName === 'prohibido') {
-      this.isProhibited = true;
-      return;
-    }
-
-    pokemonName = pokemonName.toLowerCase()
-
+  callPokemonService(pokemonName: string) {
     this.pokemonService.getPokemonByName(pokemonName)
       .subscribe(pokemon => {
 

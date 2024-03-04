@@ -1,7 +1,7 @@
 import { Injectable, untracked } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Pokemon } from '../interfaces/pokemon.interface';
-import { environments } from '../../../../environments/environments';
+import { environments } from '../../../environments/environments';
 import { Observable, combineLatest, filter, map, switchMap, takeWhile, tap } from 'rxjs';
 import { UrlPokemon } from '../interfaces/url-pokemon.interface';
 
